@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual o seu nome?"
+        android:textSize="20sp"
+        android:id="@+id/texto_1"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui..."
+        android:id="@+id/texto_2"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/texto_1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aposto que consigo adivinhar sua idade :)"
+        android:textSize="20sp"
+        android:id="@+id/texto_3"
+        app:layout_constraintTop_toBottomOf="@+id/texto_2"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Em qual ano você nasceu?"
+        android:textSize="20sp"
+        android:id="@+id/texto_4"
+        app:layout_constraintTop_toBottomOf="@+id/texto_3"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui..."
+        android:id="@+id/texto_5"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/texto_4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual o ano atual?"
+        android:textSize="20sp"
+        android:id="@+id/texto_6"
+        app:layout_constraintTop_toBottomOf="@+id/texto_5"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui..."
+        android:id="@+id/texto_7"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/texto_6"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textSize="20sp"
+        android:id="@+id/bt_01"
+        app:layout_constraintTop_toBottomOf="@+id/texto_7"
+        android:layout_marginTop="20dp"
+        android:onClick="botao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/texto_8"
+        app:layout_constraintTop_toBottomOf="@+id/bt_01"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
